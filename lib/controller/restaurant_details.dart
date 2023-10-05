@@ -7,7 +7,7 @@ class RestaurantList with ChangeNotifier {
   List<Restaurant> _restaurants = [];
 
   RestaurantList() {
-    // Initialize 5 restaurant objects
+  
     _restaurants = [
       Restaurant(
         id: '1',
