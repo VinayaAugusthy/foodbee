@@ -9,22 +9,45 @@ class RestaurantList with ChangeNotifier {
     _restaurants = [
       Restaurant(
         id: '1',
-        name: 'Restaurant 1',
-        address: 'Address 1',
-        description: 'Description 1',
+        name: 'Qwalli ',
+        address: 'Aluva Kochi',
+        description: 'A budget friendly restaurant',
         menuItems: [
           MenuItem(
-              name: 'Item 1.1',
-              category: 'Indian',
-              price: 150.00,
-              imageUrl:
-                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScJRPzCaUDeNm15-JUuzcQXjG843WwxPTGeA&usqp=CAU'),
+            name: 'Chicken Biriyani',
+            category: 'Indian',
+            price: 150.00,
+            imageUrl:
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT65s4FVJPcAOmmITjN62U7fhbtkcBnwz6mcA&usqp=CAU',
+          ),
           MenuItem(
-              name: 'Item 1.2',
-              category: 'Chinese',
-              price: 210.00,
-              imageUrl:
-                  'https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/15f7f82d-3521-491e-6ed1-5c90734db800/public'),
+            name: 'Alpham',
+            category: 'Arabian',
+            price: 600.00,
+            imageUrl:
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTChLxCmLcO8zXpSqkSSRwarHhOQW2ggWpwsQ&usqp=CAU',
+          ),
+          MenuItem(
+            name: 'Chiken Noodles',
+            category: 'Chinese',
+            price: 210.00,
+            imageUrl:
+                'https://www.hileymazdaofburleson.com/blogs/3654/wp-content/uploads/2021/02/4_Great_Chinese_Restaurants_in_and_Around_Burleson_637472652236699482.png',
+          ),
+          MenuItem(
+            name: 'Thai Noodles',
+            category: 'Thai',
+            price: 210.00,
+            imageUrl:
+                'https://img.freepik.com/free-photo/thai-food-noodles-spicy-boil-with-seafood-pork-hot-pot_1150-27874.jpg?w=740&t=st=1696496464~exp=1696497064~hmac=f7c5e47414180129d176e3e039fd791d57585701d1dd60c9d056e52b82fb4a01',
+          ),
+          MenuItem(
+            name: 'Meat Plate',
+            category: 'Continental',
+            price: 210.00,
+            imageUrl:
+                'https://img.freepik.com/free-photo/freshly-cooked-gourmet-taco-rustic-plate-generated-by-ai_188544-33863.jpg?size=626&ext=jpg&ga=GA1.2.7138222.1696496360&semt=ais',
+          ),
         ],
       ),
       Restaurant(
