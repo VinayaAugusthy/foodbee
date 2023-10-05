@@ -17,10 +17,12 @@ class RestaurantList with ChangeNotifier {
         menuItems: [
           MenuItem(
               name: 'Item 1.1',
+              category: 'Indian',
               price: 150.00,
               imageUrl: 'https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/15f7f82d-3521-491e-6ed1-5c90734db800/public'),
           MenuItem(
               name: 'Item 1.2',
+              category: 'Chinese',
               price: 210.00,
               imageUrl: 'https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/15f7f82d-3521-491e-6ed1-5c90734db800/public'),
         ],
@@ -33,10 +35,12 @@ class RestaurantList with ChangeNotifier {
         menuItems: [
           MenuItem(
               name: 'Item 1.1',
+              category: 'Japanese',
               price: 150.00,
               imageUrl: 'https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/15f7f82d-3521-491e-6ed1-5c90734db800/public'),
           MenuItem(
             name: 'Item 1.2',
+            category: 'Burger',
             price: 210.00,
             imageUrl: 'https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/15f7f82d-3521-491e-6ed1-5c90734db800/public',
           )
@@ -50,11 +54,13 @@ class RestaurantList with ChangeNotifier {
         menuItems: [
           MenuItem(
             name: 'Item 1.1',
+            category: 'Veg meals',
             price: 150.00,
             imageUrl: 'https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/15f7f82d-3521-491e-6ed1-5c90734db800/public',
           ),
           MenuItem(
             name: 'Item 1.2',
+            category: 'Thai',
             price: 210.00,
             imageUrl: 'https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/15f7f82d-3521-491e-6ed1-5c90734db800/public',
           )
@@ -68,11 +74,13 @@ class RestaurantList with ChangeNotifier {
         menuItems: [
           MenuItem(
             name: 'Item 1.1',
+            category: 'Arabian',
             price: 150.00,
             imageUrl: 'https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/15f7f82d-3521-491e-6ed1-5c90734db800/public',
           ),
           MenuItem(
               name: 'Item 1.2',
+              category: 'Indian',
               price: 210.00,
               imageUrl: 'https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/15f7f82d-3521-491e-6ed1-5c90734db800/public'),
         ],
@@ -85,11 +93,13 @@ class RestaurantList with ChangeNotifier {
         menuItems: [
           MenuItem(
             name: 'Item 5.1',
+            category: 'Italian',
             price: 550.00,
             imageUrl: 'https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/15f7f82d-3521-491e-6ed1-5c90734db800/public',
           ),
           MenuItem(
             name: 'Item 5.2',
+            category: 'Spanish',
             price: 510.00,
             imageUrl: 'https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/15f7f82d-3521-491e-6ed1-5c90734db800/public',
           )

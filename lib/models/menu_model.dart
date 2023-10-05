@@ -1,10 +1,12 @@
 class MenuItem {
   final String name;
+  final String category;
   final double price;
   final String imageUrl;
 
   MenuItem({
     required this.name,
+    required this.category,
     required this.price,
     required this.imageUrl,
   });
@@ -15,6 +17,7 @@ class MenuItem {
       name: json['name'],
       price: json['price'],
       imageUrl: json['imageUrl'],
+      category: json['category'],
     );
   }
 }
