@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:foodbee/models/restaurant_model.dart';
 import 'package:foodbee/utils/colors.dart';
 import 'package:foodbee/views/widgets/menu_card.dart';
+import 'package:foodbee/views/widgets/text_widget.dart';
 
 class MenuDetails extends StatelessWidget {
   final Restaurant restaurant;
@@ -13,13 +14,11 @@ class MenuDetails extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          restaurant.name,
-          style: TextStyle(
-            color: whiteColor,
-            fontWeight: FontWeight.bold,
-            fontSize: 26,
-          ),
+        title: TextWidget(
+          text: restaurant.name,
+          size: 26,
+          fontWeight: FontWeight.bold,
+          color: whiteColor,
         ),
         centerTitle: true,
       ),
@@ -41,7 +40,10 @@ class MenuDetails extends StatelessWidget {
                           right: size.width * 0.01,
                           // top: size.width * 0.03,
                         ),
-                        child: MenuCard(size: size,item: item,),
+                        child: MenuCard(
+                          size: size,
+                          item: item,
+                        ),
                       ),
                     )
                     .toList(),
@@ -53,4 +55,3 @@ class MenuDetails extends StatelessWidget {
     );
   }
 }
-

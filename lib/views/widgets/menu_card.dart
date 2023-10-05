@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:foodbee/models/menu_model.dart';
+import 'package:foodbee/utils/colors.dart';
+import 'package:foodbee/views/widgets/text_widget.dart';
 
 class MenuCard extends StatelessWidget {
   const MenuCard({
@@ -52,26 +54,23 @@ class MenuCard extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
-                              item.name,
-                              style: const TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
+                            TextWidget(
+                              text: item.name,
+                              size: 20,
+                              fontWeight: FontWeight.bold,
+                              color: blackColor,
                             ),
-                            Text(
-                              'Rs. ${item.price.toString()}',
-                              style: const TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
+                            TextWidget(
+                              text: 'Rs. ${item.price.toString()}',
+                              size: 20,
+                              fontWeight: FontWeight.bold,
+                              color: blackColor,
                             ),
-                            Text(
-                              item.category,
-                              style: const TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
+                            TextWidget(
+                              text: item.category,
+                              size: 20,
+                              fontWeight: FontWeight.bold,
+                              color: blackColor,
                             ),
                           ],
                         ),

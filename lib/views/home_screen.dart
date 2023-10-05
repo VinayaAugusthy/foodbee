@@ -16,13 +16,11 @@ class HomeScreen extends StatelessWidget {
     Size size = MediaQuery.sizeOf(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'Restaurants',
-          style: TextStyle(
-            color: whiteColor,
-            fontWeight: FontWeight.bold,
-            fontSize: 26,
-          ),
+        title: TextWidget(
+          text: 'Restaurants',
+          size: 26,
+          fontWeight: FontWeight.bold,
+          color: whiteColor,
         ),
         centerTitle: true,
       ),
@@ -72,5 +70,3 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-
-
