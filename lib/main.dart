@@ -5,8 +5,12 @@ import 'package:foodbee/views/home_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-  runApp(ChangeNotifierProvider(create: (BuildContext context) =>RestaurantList(),
-  child: const MyApp()));
+  runApp(
+    ChangeNotifierProvider(
+      create: (BuildContext context) => RestaurantList(),
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -23,4 +27,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
