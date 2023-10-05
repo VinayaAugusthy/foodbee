@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:foodbee/controller/restaurant_details.dart';
 import 'package:foodbee/utils/colors.dart';
+import 'package:foodbee/views/menu_details.dart';
+import 'package:foodbee/views/widgets/drawer.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -23,6 +25,7 @@ class HomeScreen extends StatelessWidget {
         ),
         centerTitle: true,
       ),
+      drawer: drawer(),
       body: ListView.builder(
         itemCount: restaurants.length,
         itemBuilder: (context, index) {
@@ -56,6 +59,15 @@ class HomeScreen extends StatelessWidget {
                     fontSize: 20,
                   ),
                 ),
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => MenuDetails(
+                        restaurant: restaurant,
+                      ),
+                    ),
+                  );
+                },
               ),
             ),
           );
