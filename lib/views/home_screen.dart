@@ -3,7 +3,7 @@ import 'package:foodbee/controller/restaurant_details.dart';
 import 'package:foodbee/utils/colors.dart';
 import 'package:foodbee/views/menu_details.dart';
 import 'package:foodbee/views/widgets/drawer.dart';
-import 'package:foodbee/views/widgets/text_widget.dart';
+import 'package:foodbee/utils/text_widget.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      drawer: drawer(),
+      drawer: drawer(context),
       body: ListView.builder(
         itemCount: restaurants.length,
         itemBuilder: (context, index) {
@@ -37,7 +37,7 @@ class HomeScreen extends StatelessWidget {
             child: SizedBox(
               height: size.height * 0.25,
               child: ListTile(
-                tileColor: const Color.fromARGB(255, 211, 138, 133),
+                tileColor: const Color.fromARGB(255, 235, 109, 100),
                 title: Padding(
                   padding: EdgeInsets.only(top: size.width * 0.08),
                   child: TextWidget(
@@ -47,11 +47,22 @@ class HomeScreen extends StatelessWidget {
                     color: whiteColor,
                   ),
                 ),
-                subtitle: TextWidget(
-                  text: restaurant.address,
-                  size: 20,
-                  fontWeight: FontWeight.normal,
-                  color: whiteColor,
+                subtitle: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    TextWidget(
+                      text: restaurant.address,
+                      size: 20,
+                      fontWeight: FontWeight.normal,
+                      color: whiteColor,
+                    ),
+                    TextWidget(
+                      text: restaurant.description,
+                      size: 20,
+                      fontWeight: FontWeight.normal,
+                      color: whiteColor,
+                    ),
+                  ],
                 ),
                 onTap: () {
                   Navigator.of(context).push(

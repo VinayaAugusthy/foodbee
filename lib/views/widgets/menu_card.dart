@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:foodbee/models/menu_model.dart';
 import 'package:foodbee/utils/colors.dart';
-import 'package:foodbee/views/widgets/text_widget.dart';
+import 'package:foodbee/utils/text_widget.dart';
 
 class MenuCard extends StatelessWidget {
   const MenuCard({

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:foodbee/models/restaurant_model.dart';
 import 'package:foodbee/utils/colors.dart';
 import 'package:foodbee/views/widgets/menu_card.dart';
-import 'package:foodbee/views/widgets/text_widget.dart';
+import 'package:foodbee/utils/text_widget.dart';
 
 class MenuDetails extends StatelessWidget {
   final Restaurant restaurant;
